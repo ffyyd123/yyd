@@ -1,0 +1,48 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: yyd
+  redis:
+    port: 6379
+    host: 192.168.136.160
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.144.230.56:3306/yyd?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456
+  data:
+    mongodb:
+      uri: mongodb://192.144.230.56:27017/yyd
+
+mybatis-plus:
+  mapper-locations: classpath*:/com/yyd/yyd/mapper/**/*.xml
+  global-config:
+    db-config:
+      table-prefix: tb_   # 表名前缀
+      id-type: auto   # id策略为自增长
+  type-enums-package: com.yyd.yyd.models.enums.**
+logging:
+  config: E:/yyd/yyd/src/main/resources/logback.xml
+  level:
+    com.hl.magic: trace
+
+#swagger:
+#  base-package: 'com.yyd.yyd'
+#  base-path: '/**'
+#  title: '注解方式的Swagger'
+#  description: '这是注解方式的Swagger'
+#  version: '2.0'
+#  license-url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
+#  license: 'The Apache License'
+#  contact:
+#    name: 'yyd'
+#    url: 'https:www.baidu.com'
+#    email: '116217017@qq.com'
+
+
+
