@@ -30,7 +30,7 @@ import io.swagger.annotations.ApiModelProperty;
 public class Student extends Model<Student> {
     @TableId("id")
     @ApiModelProperty(value = "")
-    private Integer id;
+    private Integer id; 
 
     @TableField("gid")
     @ApiModelProperty(value = "gid")
