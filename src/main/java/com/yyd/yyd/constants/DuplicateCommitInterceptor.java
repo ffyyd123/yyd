@@ -45,9 +45,9 @@ public class DuplicateCommitInterceptor implements HandlerInterceptor {
         DuplicateCommitLimit duplicateCommitLimit = handlerMethod.getMethodAnnotation(DuplicateCommitLimit.class);
         if (duplicateCommitLimit != null) {
             String requestURI = request.getRequestURI();
-            log.info("preHandler requestURI:{}", requestURI);
+           // log.info("preHandler requestURI:{}", requestURI);
             boolean isLimited = helper.getValue("duplicate_commit" + requestURI) != null;
-            log.info("preHandler isLimited :{}", isLimited);
+          //  log.info("preHandler isLimited :{}", isLimited);
             if (isLimited) {
                 sendDuplicateCommitMsg(response);//返回被拦截提示信息
                 return false;

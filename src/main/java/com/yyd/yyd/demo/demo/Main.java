@@ -1,4 +1,4 @@
-package com.yyd.yyd.controller;
+package com.yyd.yyd.demo.demo;
 
 import com.yyd.yyd.utils.JsonUtils;
 

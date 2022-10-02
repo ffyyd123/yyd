@@ -1,4 +1,4 @@
-package com.yyd.yyd.controller;
+package com.yyd.yyd.demo.demo;
 
 public class son extends Demo{
     public son(String aa) {

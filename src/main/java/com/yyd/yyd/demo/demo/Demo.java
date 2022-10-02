@@ -1,6 +1,6 @@
-package com.yyd.yyd.controller;
+package com.yyd.yyd.demo.demo;
 
-public abstract   class  Demo {
+public abstract class Demo {
 
     private String aa;
 
@@ -8,11 +8,15 @@ public abstract   class  Demo {
         this.aa = aa;
     }
 
-    public static void say(){
+    public Demo() {
+
+    }
+
+    public static void say() {
         System.out.println("say");
     }
 
-    public void saddy(){
+    public void saddy() {
         System.out.println("say");
     }
 }
