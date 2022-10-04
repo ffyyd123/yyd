@@ -8,7 +8,7 @@ import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@Component // 注入bean
+//@Component // 注入bean
 public class MyMetaObjectHandler implements MetaObjectHandler {
 
 

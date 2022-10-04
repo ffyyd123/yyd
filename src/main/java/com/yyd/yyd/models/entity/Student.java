@@ -42,6 +42,11 @@ public class Student extends Model<Student> {
     @ApiModelProperty(value = "年龄")
     private Integer age;
 
+    @TableField("url")
+    @ApiModelProperty(value = "url")
+    private String url;
+
+
     @Override
     protected Serializable pkVal() {
         return this.id;

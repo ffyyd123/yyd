@@ -20,9 +20,9 @@ import java.util.Scanner;
 
 public class CodeGenerator {
 
-    private static final String tableName = "tb_student";
+    private static final String tableName = "tb_product";
     //实体类名
-    private static final String beanName = "Student";
+    private static final String beanName = "Product";
     //开发人员
     private static final String develop = "yyd";
     //表前缀
