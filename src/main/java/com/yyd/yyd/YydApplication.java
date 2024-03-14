@@ -1,5 +1,7 @@
 package com.yyd.yyd;
 
+//import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
+//import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,6 +20,7 @@ import springfox.documentation.oas.annotations.EnableOpenApi;
 @MapperScan("com.yyd.yyd.dao.mapper")
 //开启aspect 默认未false使用jdk的动态代理  true表示使用cglib动态代理
 @EnableAspectJAutoProxy(proxyTargetClass = true)
+//@NacosPropertySource(dataId = "demo001", autoRefreshed = true)
 public class YydApplication {
 
     public static void main(String[] args) {

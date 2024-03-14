@@ -11,7 +11,7 @@
     <groupId>com.yyd</groupId>
     <artifactId>yyd</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>yyd</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -282,6 +282,30 @@
             <artifactId>easyexcel</artifactId>
             <version>2.1.4</version>
         </dependency>
+        <!-- nacos -->
+        <!-- Nacos 组件依赖 -->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba.boot</groupId>-->
+<!--            <artifactId>nacos-discovery-spring-boot-starter</artifactId>-->
+<!--            <version>0.2.10</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba.boot</groupId>-->
+<!--            <artifactId>nacos-config-spring-boot-starter</artifactId>-->
+<!--            <version>0.2.10</version>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-nacos-config -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>2021.0.6.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+            <version>3.1.5</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -314,7 +338,7 @@
                 </executions>
                 <configuration>
                     <imageName>yyd/${project.artifactId}:${project.version}</imageName>
-                    <dockerHost>http://192.144.230.56:2375</dockerHost>
+                    <dockerHost>http://127.0.0.1:2375</dockerHost>
                     <baseImage>java:8</baseImage>
                     <entryPoint>["java","-jar","/${project.build.finalName}.jar"]</entryPoint>
                     <resources>

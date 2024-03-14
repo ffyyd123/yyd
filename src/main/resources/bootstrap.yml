@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: yyd
+
+    # nacos相关配置
+    cloud:
+      nacos:
+        config:
+          # nacos服务器地址
+          server-addr: 123.249.41.142:8848
+          # 配置所属命名空间的id
+          namespace: 770dd66a-abf5-4707-a13d-7b80ed41c415
+          # 配置所属分组
+          group: dev
+          # 配置文件类型，默认是properties
+          file-extension: yaml
+          # nacos用户名
+          username: nacos
+          # nacos密码
+          password: nacos
+          refresh-enabled: true
